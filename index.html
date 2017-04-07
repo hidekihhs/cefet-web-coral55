@@ -1,52 +1,65 @@
 ﻿<!doctype html>
+
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Lanchonete do Coral 55</title>
-  <link rel="stylesheet" href="estilo.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Lanchonete do Coral 55</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+
 <body>
   <!-- substitua os elementos não semânticos por elementos semânticos -->
-  <div id="recipiente">
-    <div id="cabecalho">
-      <h1>Lanchonete do Coral 55</h1>
-      <h2>O melhor açaí marítimo da região</h2>
-    </div>
-    <div id="conteudo">
-      <div id="lateral">
-        <img src="images/siri.png" alt="Um siri feliz após comer na lanchonete">
-        <h2>Cardápio</h2>
-        <img src="images/bolhas.png" alt="Bolhas de ar">
-        <img src="images/peixe.png" alt="Peixe feliz após beber um delicioso
+  <main>
+      <header>
+        <h1 id="titulo">Lanchonete do Coral 55</h1>
+        <h2 id="subtitulo">O melhor <span id="dest">açaí</span> marítimo da região</h2>
+      </header>
+      <div class="conteudo">
+        <section id="lateral">
+          <img  id="siri" src="images/siri.png" alt="Um siri feliz após comer na lanchonete">
+          <h2 id="rotate">Cardápio</h2>
+          <img  id="bolhas" src="images/bolhas.png" alt="Bolhas de ar">
+          <img  id="peixe" src="images/peixe.png" alt="Peixe feliz após beber um delicioso
           coquetel de algas">
-      </div>
+        </section>
+
       <div id="cardapio">
-        <h3>Salgados</h3>
+        <h3 id="h3_1">Salgados</h3>
         <!--
           encontre uma forma para dispor os itens do cardápio com seus
           nomes à esquerda e os preços à direita
         -->
-        Pão de queijo de égua marinha $ 0,99
-        Hamburguer de microinsetos com salada de algas ou de musgo $ 2,49
+        <div class="produtos">Pão de queijo de égua marinha<span class="preco"> $ 0,99 </span></div>
+        <div class="produtos">Hamburguer de microinsetos com salada de algas ou de musgo<span class="preco"> $ 2,49 </span></div>
         <h3>Pratos</h3>
-        Açaí do manguezal 500ml $ 4,99
-        Açaí marítimo (assinatura) 500ml $ 6,99
-        Algas verdes fritas $ 7,49
-        Plâncton ao molho de maracujá $ 12,49
-        Plâncton do pacífico (importado) marinado $ 19,99
+        <div class="produtos">Açaí do manguezal 500ml <span class="preco">$ 4,99</span></div>
+        <div class="produtos">Açaí marítimo (assinatura) 500ml<span class="preco"> $ 6,99</span></div>
+        <div class="produtos">Algas verdes fritas<span class="preco"> $ 7,49</span></div>
+        <div class="produtos">Plâncton ao molho de maracujá<span class="preco"> $ 12,49</span></div>
+        <div class="produtos">Plâncton do pacífico (importado) marinado<span class="preco"> $ 19,99</span></div>
         <h3>Bebes</h3>
-        Água temperada (cortesia)
-        Água doce importada (copo) $ 29,49
-        Coquetel de algas (alcoólico) $ 8,99
-        Coquetel de algas (kids) $ 5,49
+        <div class="produtos">Água temperada )<span class="preco">(cortesia)</span></div>
+        <div class="produtos">Água doce importada (copo)<span class="preco"> $ 29,49</span></div>
+        <div class="produtos">Coquetel de algas (alcoólico)<span class="preco"> $ 8,99</span></div>
+        <div class="produtos">Coquetel de algas (kids)<span class="preco"> $ 5,49</span></div>
       </div>
+
     </div>
-    <div id="rodape">
+  
+      
+      
+    <footer>
       <img src="images/cartoes.png" alt="Formas de pagamento: Visa e Masterard">
-    </div>
-  </div>
+    </footer>
+
+  </main>
+
   <div id="ticket">
     <img src="images/ticket.png" alt="Cupom de desconto">
   </div>
+
 </body>
+
+<script type="text/javascript" src="js/bubbles.js"></script>
+
 </html>
